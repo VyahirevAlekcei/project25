@@ -109,13 +109,48 @@ public class subversion {
 		comboBox.setBounds(50, 50, 215, 30);
 		comboBox.addActionListener(actionComboBox);
 		main_panel.add(comboBox);
-
+		
+		JLabel Visota = new JLabel("Высота");
+		Visota.setBounds(20, 100, 180, 20);
+		main_panel.add(Visota);
+		Visota.setVisible(true);
+		JTextField FirstField = new JTextField();
+		FirstField.setBounds(20, 120, 180, 20);
+		main_panel.add(FirstField);
+		JLabel Radius = new JLabel("Радиус");
+		Radius.setBounds(20, 140, 180,20);
+		main_panel.add(Radius);
+		Radius.setVisible(true);
+		JTextField SecondField = new JTextField();
+		SecondField.setBounds(20, 160, 180, 20);
+		main_panel.add(SecondField);
+		
+		JButton Zapros = new JButton("Расчитать");
+		Zapros.setBounds(100, 180, 100, 30);
+		main_panel.add(Zapros);
 
 		class ShowLogo extends subversion implements ActionListener {
 			// TODO Auto-generated constructor stub
 			public void actionPerformed(ActionEvent e) {
 				pich.setVisible(true);
 
+			}
+		}
+		
+		class Data extends subversion implements ActionListener {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				String H_stroka = FirstField.getText();
+				Integer H = Integer.parseInt(H_stroka);
+				String R_stroka = SecondField.getText();
+				Integer R = Integer.parseInt(R_stroka);
+				double H_2 = H * H;
+				double R_2 = 3 * R - H;
+				double G_2 = 1.05;
+				double G = G_2 * H_2 * R_2;
+				String message = "Объем шарового сегмента равен = " + G;
+				JOptionPane.showMessageDialog(null, message , "Сообщение" , JOptionPane.PLAIN_MESSAGE);
 			}
 		}
 
@@ -125,6 +160,8 @@ public class subversion {
 		Exit.addActionListener(actionListener3);
 		ActionListener FileDownload = new FileDownload();
 		FileItem.addActionListener(FileDownload);
+		ActionListener Dannie = new Data();
+		Zapros.addActionListener(Dannie);
 		
 		main_GUI.setVisible(true);
 		main_GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
