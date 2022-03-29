@@ -6,12 +6,6 @@ public class Progtam {
 		Integer[] MassiveI = Massive.Massive2(7);
 		Sorting sorting = new Sorting();
 		sorting.sort(MassiveI);
-		//Integer i = MassiveI.length;
-		//i--;
-		//while (i > 0) {
-		//	System.out.println(MassiveI[i]);
-		//	i--;
-		//}
 		
 	}
 
