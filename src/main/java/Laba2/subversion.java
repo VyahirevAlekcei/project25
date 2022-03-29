@@ -13,11 +13,16 @@ import javax.swing.*; // ?????????? ??? GUI (????????? ?? ?????? awt)
 import javax.swing.event.MenuKeyEvent;
 
 public class subversion {
+	public static String FirstString;
+	public static String SecondString;
+
 	public static void main(String[] args) throws IOException { // ?????????? ???????: http://www.mstu.edu.ru/study/materials/java/
 		Properties props = System.getProperties();
 		props.setProperty("javax.accessibility.assistive_technologies", "");
 		//BufferedImage bufferedImage = ImageIO.read(new File("ugatu.jpg"));   ( удалено в 8 ревизии.)
 		//Image image = bufferedImage.getScaledInstance(300, 149, 0);
+		
+
 
 		Image image = ImageIO.read(subversion.class.getResource("/ugatu.jpg"));
 
@@ -98,8 +103,10 @@ public class subversion {
 					case "Снизу":
 						pich.setBounds(250, 350,300, 150);
 						break;
-					case "Отсортировать данные в проекте 25":
+					case "Отсортировать данные в проекте25":
+						Program.progtam(7);
 						break;
+						
 				}
 			}
 		};
@@ -123,6 +130,7 @@ public class subversion {
 		Radius.setVisible(true);
 		JTextField SecondField = new JTextField();
 		SecondField.setBounds(20, 160, 180, 20);
+		SecondField.setText(SecondString);
 		main_panel.add(SecondField);
 		
 		JButton Zapros = new JButton("Расчитать");
@@ -151,6 +159,27 @@ public class subversion {
 				double G = G_2 * H_2 * R_2;
 				String message = "Объем шарового сегмента равен = " + G;
 				JOptionPane.showMessageDialog(null, message , "Сообщение" , JOptionPane.PLAIN_MESSAGE);
+			}
+		}
+		
+		class FileDownload extends subversion implements ActionListener{
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				try {
+					subversion.FirstString = Schitaka.schitka(1);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				try {
+					subversion.SecondString = Schitaka.schitka(2);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				FirstField.setText(FirstString);
+				SecondField.setText(SecondString);
 			}
 		}
 

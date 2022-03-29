@@ -2,7 +2,7 @@ package Laba2;
 
 public class Massive1 {
 	
-	public static Integer[] Massive2(int j){
+	public Integer[] Massive2(int j){
 	
 	Integer[] Massive = new Integer[j];
 	Integer schet = 0;
