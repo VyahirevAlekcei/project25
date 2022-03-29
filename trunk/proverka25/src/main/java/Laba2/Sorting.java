@@ -1,6 +1,6 @@
 package Laba2;
 
-public class Sorting extends Progtam {
+public class Sorting extends Program {
 
 
 	public void sort(Integer[] MassiveI) {
