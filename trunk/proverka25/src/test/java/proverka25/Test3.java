@@ -6,7 +6,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import Laba2.Massive1;
+import Laba2.Massiv;
 import Laba2.Sorting;
 
 public class Test3 {
@@ -21,7 +21,7 @@ public class Test3 {
 
 	@Test
 	public void test() {
-		Integer[] MassiveTest = Massive1.Massive2(7);
+		Integer[] MassiveTest = Massiv.Massive2(7);
 		Integer I = MassiveTest.length;
 		Sorting sorting = new Sorting();
 		sorting.sort(MassiveTest);

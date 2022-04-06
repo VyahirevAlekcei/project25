@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import Laba2.Massive1;
+import Laba2.Massiv;
 
 
 
@@ -17,7 +17,7 @@ public class Test2 {
 
 	@Test
 	public void test() {;
-		Integer[] MassiveTest = Massive1.Massive2(7);
+		Integer[] MassiveTest = Massiv.Massive2(7);
 		Integer I = MassiveTest.length;
 		Integer right = 7;
 		assertEquals(right,I);
