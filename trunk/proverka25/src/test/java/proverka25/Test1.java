@@ -19,6 +19,5 @@ public class Test1 {
 		else {fail("Not yet implemented");}
 		}
 		else {fail("Not yet implemented");}
-		fail("Not yet implemented");
 		}
 }
