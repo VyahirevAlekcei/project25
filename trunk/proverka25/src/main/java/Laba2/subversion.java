@@ -36,7 +36,7 @@ public class subversion {
 		main_panel.setLayout(null);
 		main_GUI.add(main_panel);
 
-		JLabel laba_info = new JLabel("Лабораторная работа №2"); // Отображение текста или изображения
+		JLabel laba_info = new JLabel("Лабораторная работа ООМиП"); // Отображение текста или изображения
 		laba_info.setBounds(300,0,180,30);
 		main_panel.add(laba_info);
 
@@ -167,12 +167,14 @@ public class subversion {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				try {
+					Information.message ="Радиус ="+ Schitaka.schitka(1) + "\n";
 					subversion.FirstString = Schitaka.schitka(1);
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 				try {
+					Information.message +="Высота =" + Schitaka.schitka(2)+"\n";
 					subversion.SecondString = Schitaka.schitka(2);
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
