@@ -37,7 +37,7 @@ public class subversion {
 		main_GUI.add(main_panel);
 
 		JLabel laba_info = new JLabel("Лабораторная работа ООМиП"); // Отображение текста или изображения
-		laba_info.setBounds(300,0,180,30);
+		laba_info.setBounds(300,0,220,30);
 		main_panel.add(laba_info);
 
 
@@ -134,7 +134,7 @@ public class subversion {
 		main_panel.add(SecondField);
 		
 		JButton Zapros = new JButton("Расчитать");
-		Zapros.setBounds(100, 180, 100, 30);
+		Zapros.setBounds(80, 180, 120, 30);
 		main_panel.add(Zapros);
 
 		class ShowLogo extends subversion implements ActionListener {
