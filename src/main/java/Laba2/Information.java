@@ -8,14 +8,14 @@ import java.awt.event.ActionListener;
 public class Information implements ActionListener {
 	protected static String message = "";
     public void actionPerformed(ActionEvent e) {
-    	message += "ФИО и номера зачетных книжек\n";
+    	message += "Р¤РРћ Рё РЅРѕРјРµСЂР° Р·Р°С‡РµС‚РЅС‹С… РєРЅРёР¶РµРє\n";
         message += "-------------------------------\n";
-        message += "Налигацкий Евгений | 20150096\n";
-        message += "Аминев Алексей | 20130087\n";
-        message += "Вяхирев Алексей | 20130485\n";
+        message += "РќР°Р»РёРіР°С†РєРёР№ Р•РІРіРµРЅРёР№ | 20150096\n";
+        message += "РђРјРёРЅРµРІ РђР»РµРєСЃРµР№ | 20130087\n";
+        message += "Р’СЏС…РёСЂРµРІ РђР»РµРєСЃРµР№ | 20130485\n";
 
      
-        JOptionPane.showMessageDialog(null, message , "Сообщение" , JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null, message , "РЎРѕРѕР±С‰РµРЅРёРµ" , JOptionPane.PLAIN_MESSAGE);
        
         
     }
